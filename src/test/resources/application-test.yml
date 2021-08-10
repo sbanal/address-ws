@@ -1,0 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: false
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+api:
+  admin:
+    username: apiuser
+    password: $2a$10$THiNliNgR8YEhtzP5bwy.O4oqkDvPWjG/6WA2m48lJf8/Cf1bBGvm
+
+logging:
+  level:
+    com.h2database: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.springframework.jdbc.datasource.init.ScriptUtils: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: DEBUG
+    org.springframework.jdbc.core.JdbcTemplate: DEBUG
+    org.springframework.jdbc.core.StatementCreatorUtils: DEBUG
+    org.springframework.security: DEBUG

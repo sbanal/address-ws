@@ -1,0 +1,29 @@
+
+spring:
+  security:
+    user:
+      password:
+  datasource:
+    url: jdbc:h2:mem:addressdb
+    driverClassName: org.h2.Driver
+    username: address-admin
+    password: address-46m1n!!
+    schema: classpath:/schema.sql
+    data: classpath:/suburbs.sql
+  h2:
+    console:
+      enabled: false
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: none
+  data:
+    rest:
+      basePath: /address
+
+api:
+  admin:
+    username: apiuser
+    # Encoded password using BCryptPasswordEncoder
+    password: $2a$10$THiNliNgR8YEhtzP5bwy.O4oqkDvPWjG/6WA2m48lJf8/Cf1bBGvm
+
