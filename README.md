@@ -16,12 +16,12 @@ gradle clean build
 ```
 Use *gradlew* for windows.
 
-The built jar file can be found in the folder "[project-dir]/build/libs/aupost-coding-challenge-0.0.1-SNAPSHOT.jar*.
+The built jar file can be found in the folder "[project-dir]/build/libs/address-ws-0.0.1-SNAPSHOT.jar*.
 
 ## Run Service
 Run this service using the sample data.
 ```
-java -jar aupost-coding-challenge-0.0.1-SNAPSHOT.jar
+java -jar address-ws-0.0.1-SNAPSHOT.jar
 ```
 
 # Import Data
@@ -29,7 +29,7 @@ java -jar aupost-coding-challenge-0.0.1-SNAPSHOT.jar
 To run this service using your own data, specify *--spring.datasource.data=file:[file-path]* parameter.
 Example:
 ```
-java -jar build\libs\aupost-coding-challenge-0.0.1-SNAPSHOT.jar --spring.datasource.data=file:./src/test/resources/suburbs-test.sql
+java -jar build\libs\address-ws-0.0.1-SNAPSHOT.jar --spring.datasource.data=file:./src/test/resources/suburbs-test.sql
 ```
 
 The data file should follow sql format as shown below:
